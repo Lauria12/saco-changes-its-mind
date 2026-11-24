@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH --job-name=saco_prepare_imagenet
+#SBATCH --partition=staging
+#SBATCH --cpus-per-task=8
+#SBATCH --time=01:00:00
+#SBATCH --account=YOUR_SLURM_ACCOUNT
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
+
+# One-time staging of ImageNet-1k VALIDATION only (~50k images) -- reads directly
+# out of Snellius's shared Kaggle "ImageNet Object Localization Challenge" zip
+# (/projects/2/managed_datasets/imagenet_raw/raw/...), no download, no HF/Kaggle
+# account needed on this end since the zip is already staged centrally. Raw JPEG
+# bytes are copied as-is (no re-encoding). See saco/data.py::stage_imagenet_val.
+#
+# IMPORTANT: submit from the repository root, e.g.
+# `sbatch jobs/prepare_imagenet.job`.
+set -euo pipefail
+
+module purge
+module load 2024
+module load Anaconda3/2024.06-1   # <-- verify with `module avail Anaconda3`
+source activate saco
+
+# See jobs/run_experiment.job for why this is required.
+export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:${LD_LIBRARY_PATH:-}"
+
+cd "$SLURM_SUBMIT_DIR/src"
+
+export HF_HOME="$SLURM_SUBMIT_DIR/.hf_cache"
+
+python prepare_data.py \
+  --datasets imagenet \
+  --arches vit_b16 vit_l16 deit_b16 \
+  --data-root "$SLURM_SUBMIT_DIR/data"

@@ -1,0 +1,470 @@
+{
+  "cifar10/finetuned": {
+    "rawatt_first60": {
+      "n": 60,
+      "mode_token": 26,
+      "mode_freq": 0.13333333333333333,
+      "unique_tokens": 29,
+      "register_freq": 0.0,
+      "top5": [
+        [
+          26,
+          8
+        ],
+        [
+          169,
+          7
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          55,
+          4
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "rollout_first60": {
+      "n": 60,
+      "mode_token": 195,
+      "mode_freq": 0.6833333333333333,
+      "unique_tokens": 6,
+      "register_freq": 0.6833333333333333,
+      "top5": [
+        [
+          195,
+          41
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          182,
+          7
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          104,
+          1
+        ]
+      ]
+    },
+    "rawatt_all": {
+      "n": 500,
+      "mode_token": 26,
+      "mode_freq": 0.15,
+      "unique_tokens": 96,
+      "register_freq": 0.0,
+      "top5": [
+        [
+          26,
+          75
+        ],
+        [
+          15,
+          56
+        ],
+        [
+          169,
+          51
+        ],
+        [
+          180,
+          29
+        ],
+        [
+          3,
+          19
+        ]
+      ]
+    },
+    "rollout_all": {
+      "n": 500,
+      "mode_token": 195,
+      "mode_freq": 0.63,
+      "unique_tokens": 26,
+      "register_freq": 0.63,
+      "top5": [
+        [
+          195,
+          315
+        ],
+        [
+          182,
+          87
+        ],
+        [
+          13,
+          68
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          104,
+          2
+        ]
+      ]
+    }
+  },
+  "cifar10/base": {
+    "rawatt_first60": {
+      "n": 60,
+      "mode_token": 26,
+      "mode_freq": 0.11666666666666667,
+      "unique_tokens": 36,
+      "register_freq": 0.0,
+      "top5": [
+        [
+          26,
+          7
+        ],
+        [
+          185,
+          5
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          169,
+          3
+        ],
+        [
+          192,
+          3
+        ]
+      ]
+    },
+    "rollout_first60": {
+      "n": 60,
+      "mode_token": 195,
+      "mode_freq": 0.6,
+      "unique_tokens": 5,
+      "register_freq": 0.6,
+      "top5": [
+        [
+          195,
+          36
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          182,
+          8
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          105,
+          1
+        ]
+      ]
+    },
+    "rawatt_all": {
+      "n": 500,
+      "mode_token": 26,
+      "mode_freq": 0.176,
+      "unique_tokens": 112,
+      "register_freq": 0.002,
+      "top5": [
+        [
+          26,
+          88
+        ],
+        [
+          169,
+          41
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          180,
+          31
+        ],
+        [
+          192,
+          20
+        ]
+      ]
+    },
+    "rollout_all": {
+      "n": 500,
+      "mode_token": 195,
+      "mode_freq": 0.48,
+      "unique_tokens": 7,
+      "register_freq": 0.48,
+      "top5": [
+        [
+          195,
+          240
+        ],
+        [
+          13,
+          152
+        ],
+        [
+          182,
+          89
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          105,
+          1
+        ]
+      ]
+    }
+  },
+  "cifar100/finetuned": {
+    "rawatt_first60": {
+      "n": 60,
+      "mode_token": 26,
+      "mode_freq": 0.23333333333333334,
+      "unique_tokens": 21,
+      "register_freq": 0.0,
+      "top5": [
+        [
+          26,
+          14
+        ],
+        [
+          180,
+          9
+        ],
+        [
+          192,
+          7
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          38,
+          4
+        ]
+      ]
+    },
+    "rollout_first60": {
+      "n": 60,
+      "mode_token": 195,
+      "mode_freq": 0.5333333333333333,
+      "unique_tokens": 10,
+      "register_freq": 0.5333333333333333,
+      "top5": [
+        [
+          195,
+          32
+        ],
+        [
+          182,
+          15
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          175,
+          1
+        ],
+        [
+          26,
+          1
+        ]
+      ]
+    },
+    "rawatt_all": {
+      "n": 500,
+      "mode_token": 26,
+      "mode_freq": 0.272,
+      "unique_tokens": 61,
+      "register_freq": 0.0,
+      "top5": [
+        [
+          26,
+          136
+        ],
+        [
+          15,
+          46
+        ],
+        [
+          180,
+          40
+        ],
+        [
+          192,
+          34
+        ],
+        [
+          38,
+          21
+        ]
+      ]
+    },
+    "rollout_all": {
+      "n": 500,
+      "mode_token": 195,
+      "mode_freq": 0.468,
+      "unique_tokens": 32,
+      "register_freq": 0.468,
+      "top5": [
+        [
+          195,
+          234
+        ],
+        [
+          182,
+          130
+        ],
+        [
+          13,
+          88
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          84,
+          2
+        ]
+      ]
+    }
+  },
+  "cifar100/base": {
+    "rawatt_first60": {
+      "n": 60,
+      "mode_token": 26,
+      "mode_freq": 0.1,
+      "unique_tokens": 36,
+      "register_freq": 0.016666666666666666,
+      "top5": [
+        [
+          26,
+          6
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          169,
+          4
+        ],
+        [
+          180,
+          4
+        ],
+        [
+          185,
+          3
+        ]
+      ]
+    },
+    "rollout_first60": {
+      "n": 60,
+      "mode_token": 195,
+      "mode_freq": 0.5166666666666667,
+      "unique_tokens": 4,
+      "register_freq": 0.5166666666666667,
+      "top5": [
+        [
+          195,
+          31
+        ],
+        [
+          182,
+          15
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "rawatt_all": {
+      "n": 500,
+      "mode_token": 26,
+      "mode_freq": 0.18,
+      "unique_tokens": 120,
+      "register_freq": 0.006,
+      "top5": [
+        [
+          26,
+          90
+        ],
+        [
+          180,
+          33
+        ],
+        [
+          15,
+          29
+        ],
+        [
+          169,
+          21
+        ],
+        [
+          38,
+          15
+        ]
+      ]
+    },
+    "rollout_all": {
+      "n": 500,
+      "mode_token": 195,
+      "mode_freq": 0.446,
+      "unique_tokens": 6,
+      "register_freq": 0.446,
+      "top5": [
+        [
+          195,
+          223
+        ],
+        [
+          13,
+          138
+        ],
+        [
+          182,
+          117
+        ],
+        [
+          0,
+          20
+        ],
+        [
+          97,
+          1
+        ]
+      ]
+    }
+  }
+}

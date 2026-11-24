@@ -1,0 +1,176 @@
+{
+  "timm_imagenet/imagenette": {
+    "n": 500,
+    "mode_token": 13,
+    "mode_freq": 0.188,
+    "unique_tokens": 129,
+    "register_freq": 0.082,
+    "top5": [
+      [
+        13,
+        94
+      ],
+      [
+        182,
+        44
+      ],
+      [
+        0,
+        42
+      ],
+      [
+        195,
+        41
+      ],
+      [
+        1,
+        11
+      ]
+    ]
+  },
+  "timm_imagenet/cifar10": {
+    "n": 500,
+    "mode_token": 195,
+    "mode_freq": 0.27,
+    "unique_tokens": 83,
+    "register_freq": 0.27,
+    "top5": [
+      [
+        195,
+        135
+      ],
+      [
+        13,
+        107
+      ],
+      [
+        182,
+        67
+      ],
+      [
+        0,
+        53
+      ],
+      [
+        84,
+        7
+      ]
+    ]
+  },
+  "hf_base/imagenette": {
+    "n": 500,
+    "mode_token": 195,
+    "mode_freq": 0.318,
+    "unique_tokens": 32,
+    "register_freq": 0.318,
+    "top5": [
+      [
+        195,
+        159
+      ],
+      [
+        13,
+        155
+      ],
+      [
+        182,
+        98
+      ],
+      [
+        0,
+        44
+      ],
+      [
+        189,
+        4
+      ]
+    ]
+  },
+  "hf_base/cifar10": {
+    "n": 500,
+    "mode_token": 195,
+    "mode_freq": 0.48,
+    "unique_tokens": 7,
+    "register_freq": 0.48,
+    "top5": [
+      [
+        195,
+        240
+      ],
+      [
+        13,
+        152
+      ],
+      [
+        182,
+        89
+      ],
+      [
+        0,
+        16
+      ],
+      [
+        105,
+        1
+      ]
+    ]
+  },
+  "hf_cifar10_finetuned/imagenette": {
+    "n": 500,
+    "mode_token": 195,
+    "mode_freq": 0.326,
+    "unique_tokens": 65,
+    "register_freq": 0.326,
+    "top5": [
+      [
+        195,
+        163
+      ],
+      [
+        13,
+        105
+      ],
+      [
+        182,
+        101
+      ],
+      [
+        0,
+        23
+      ],
+      [
+        188,
+        8
+      ]
+    ]
+  },
+  "hf_cifar10_finetuned/cifar10": {
+    "n": 500,
+    "mode_token": 195,
+    "mode_freq": 0.63,
+    "unique_tokens": 26,
+    "register_freq": 0.63,
+    "top5": [
+      [
+        195,
+        315
+      ],
+      [
+        182,
+        87
+      ],
+      [
+        13,
+        68
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        104,
+        2
+      ]
+    ]
+  }
+}

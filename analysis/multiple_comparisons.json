@@ -1,0 +1,2487 @@
+{
+  "n_tests": 240,
+  "counts": {
+    "IG": {
+      "uncorrected": {
+        "sig_faithful": 59,
+        "sig_below": 0,
+        "below_any": 0,
+        "n_cells": 60
+      },
+      "bh": {
+        "sig_faithful": 59,
+        "sig_below": 0,
+        "below_any": 0,
+        "n_cells": 60
+      },
+      "holm": {
+        "sig_faithful": 59,
+        "sig_below": 0,
+        "below_any": 0,
+        "n_cells": 60
+      }
+    },
+    "RawAtt": {
+      "uncorrected": {
+        "sig_faithful": 18,
+        "sig_below": 23,
+        "below_any": 33,
+        "n_cells": 60
+      },
+      "bh": {
+        "sig_faithful": 18,
+        "sig_below": 22,
+        "below_any": 33,
+        "n_cells": 60
+      },
+      "holm": {
+        "sig_faithful": 17,
+        "sig_below": 17,
+        "below_any": 33,
+        "n_cells": 60
+      }
+    },
+    "Rollout": {
+      "uncorrected": {
+        "sig_faithful": 42,
+        "sig_below": 8,
+        "below_any": 14,
+        "n_cells": 60
+      },
+      "bh": {
+        "sig_faithful": 42,
+        "sig_below": 8,
+        "below_any": 14,
+        "n_cells": 60
+      },
+      "holm": {
+        "sig_faithful": 41,
+        "sig_below": 8,
+        "below_any": 14,
+        "n_cells": 60
+      }
+    },
+    "TransMM": {
+      "uncorrected": {
+        "sig_faithful": 60,
+        "sig_below": 0,
+        "below_any": 0,
+        "n_cells": 60
+      },
+      "bh": {
+        "sig_faithful": 60,
+        "sig_below": 0,
+        "below_any": 0,
+        "n_cells": 60
+      },
+      "holm": {
+        "sig_faithful": 60,
+        "sig_below": 0,
+        "below_any": 0,
+        "n_cells": 60
+      }
+    }
+  },
+  "cells": [
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.4686765712076159,
+      "p": 4.400925748375584e-87,
+      "p_holm": 9.505999616491261e-85,
+      "q_bh": 4.22488871844056e-86
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.4701708261846531,
+      "p": 3.012699890528067e-84,
+      "p_holm": 6.326669770108941e-82,
+      "q_bh": 2.332412818473342e-83
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.4072763035914752,
+      "p": 1.335310470775347e-70,
+      "p_holm": 2.4970305803498988e-68,
+      "q_bh": 5.934713203445987e-70
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.4213176486792985,
+      "p": 6.786594097852242e-74,
+      "p_holm": 1.3165992549833348e-71,
+      "q_bh": 3.465494858477741e-73
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.24592928835419212,
+      "p": 1.1494609250359843e-28,
+      "p_holm": 1.1954393620374236e-26,
+      "q_bh": 2.01365417524552e-28
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": 0.022093383007268975,
+      "p": 0.29112560722264846,
+      "p_holm": 1.0,
+      "q_bh": 0.314730386186647
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.09872655079331114,
+      "p": 4.133470886263447e-08,
+      "p_holm": 2.2329382225115255e-06,
+      "q_bh": 5.304989372744531e-08
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.038096937757757306,
+      "p": 0.026188796822734138,
+      "p_holm": 0.8904190919729607,
+      "q_bh": 0.030363822403170017
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.002192155303775828,
+      "p": 0.7947155454227903,
+      "p_holm": 1.0,
+      "q_bh": 0.8081853004299563
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.02045478837657439,
+      "p": 0.3258904153182217,
+      "p_holm": 1.0,
+      "q_bh": 0.35073407926624756
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": -0.15189862216977604,
+      "p": 8.792211962737831e-16,
+      "p_holm": 6.945847450562886e-14,
+      "q_bh": 1.3025499204056045e-15
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": -0.12908109655181746,
+      "p": 2.8080645103747457e-11,
+      "p_holm": 1.8814032219510796e-09,
+      "q_bh": 3.873192428103097e-11
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": -0.11316503660902948,
+      "p": 1.1236293399500335e-10,
+      "p_holm": 6.966501907690208e-09,
+      "q_bh": 1.5065421317765812e-10
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": -0.1005962253785536,
+      "p": 4.0598876772936826e-08,
+      "p_holm": 2.2329382225115255e-06,
+      "q_bh": 5.238564744895074e-08
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": -0.02477191964890784,
+      "p": 0.2239780641643031,
+      "p_holm": 1.0,
+      "q_bh": 0.24433970636105795
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.3608068361332109,
+      "p": 5.106504783237072e-66,
+      "p_holm": 8.987448418497247e-64,
+      "q_bh": 1.8854786891952265e-65
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.23711521218104584,
+      "p": 1.241284432560512e-33,
+      "p_holm": 1.4026514087933786e-31,
+      "q_bh": 2.32740831105096e-33
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.28760140768906073,
+      "p": 1.0785172784058033e-42,
+      "p_holm": 1.3912872891434864e-40,
+      "q_bh": 2.3111084537267215e-42
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.34770128919561377,
+      "p": 1.1687806735885638e-58,
+      "p_holm": 1.8934246912134733e-56,
+      "q_bh": 3.5507260969779155e-58
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.2987179621587489,
+      "p": 5.734488848440193e-49,
+      "p_holm": 8.429698607207084e-47,
+      "q_bh": 1.4641248123677088e-48
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.5887008775219775,
+      "p": 3.809218191570782e-119,
+      "p_holm": 9.027847114022754e-117,
+      "q_bh": 2.2855309149424692e-117
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.6327544836395352,
+      "p": 8.575035899268933e-127,
+      "p_holm": 2.040858544026006e-124,
+      "q_bh": 6.860028719415146e-125
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.5347296641778362,
+      "p": 4.626620131609513e-112,
+      "p_holm": 1.0872557309282354e-109,
+      "q_bh": 1.850648052643805e-110
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.425696202912591,
+      "p": 8.205889334550124e-76,
+      "p_holm": 1.6329719775754745e-73,
+      "q_bh": 4.689079619742928e-75
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.30238967810595535,
+      "p": 7.636849636016918e-41,
+      "p_holm": 9.622430541381316e-39,
+      "q_bh": 1.5937773153426612e-40
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": 0.4149090711475513,
+      "p": 1.0347030338098853e-84,
+      "p_holm": 2.2039174620150557e-82,
+      "q_bh": 8.868883146941875e-84
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": 0.3500079226805463,
+      "p": 9.808514924366915e-60,
+      "p_holm": 1.6282134774449078e-57,
+      "q_bh": 3.138724775797413e-59
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": 0.34923613268068393,
+      "p": 1.388545383911093e-67,
+      "p_holm": 2.4993816910399674e-65,
+      "q_bh": 5.4631293793223326e-67
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": 0.2982092063938379,
+      "p": 8.672409327078983e-49,
+      "p_holm": 1.2574993524264525e-46,
+      "q_bh": 2.1681023317697457e-48
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.2434390119447473,
+      "p": 3.272252938414403e-32,
+      "p_holm": 3.599478232255843e-30,
+      "q_bh": 5.9949672154157e-32
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": -0.15583309696726547,
+      "p": 1.419658427992185e-18,
+      "p_holm": 1.2351028323532009e-16,
+      "q_bh": 2.2124546929748338e-18
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": -0.13593394620881522,
+      "p": 6.9731309026750995e-15,
+      "p_holm": 5.229848177006324e-13,
+      "q_bh": 1.0081635040012191e-14
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": -0.12668663213651835,
+      "p": 1.538817581212734e-14,
+      "p_holm": 1.138725010097423e-12,
+      "q_bh": 2.2114743682099173e-14
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": -0.14344906873675942,
+      "p": 1.1236369225991452e-15,
+      "p_holm": 8.652004304013418e-14,
+      "q_bh": 1.644346715998749e-15
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": -0.006936227005502603,
+      "p": 0.6245539554466504,
+      "p_holm": 1.0,
+      "q_bh": 0.6405681594324619
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.4938705692534991,
+      "p": 1.776862702790665e-110,
+      "p_holm": 4.140090097502249e-108,
+      "q_bh": 5.3305881083719945e-109
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.34937564912580216,
+      "p": 8.096133317662856e-62,
+      "p_holm": 1.3682465306850227e-59,
+      "q_bh": 2.6987111058876185e-61
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.42110298024708515,
+      "p": 1.4263151004917987e-88,
+      "p_holm": 3.1093669190721212e-86,
+      "q_bh": 1.4883288005131814e-87
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3679162593358104,
+      "p": 5.331455345360697e-71,
+      "p_holm": 1.0076450602731719e-68,
+      "q_bh": 2.4606716978587835e-70
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.33496192832643806,
+      "p": 6.61336886022012e-58,
+      "p_holm": 1.0581390176352192e-55,
+      "q_bh": 1.95951669932448e-57
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.2914380483770214,
+      "p": 6.092856569236941e-40,
+      "p_holm": 7.555142145853807e-38,
+      "q_bh": 1.2498167321511675e-39
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.2897447526646506,
+      "p": 3.258456992373695e-39,
+      "p_holm": 3.9101483908484336e-37,
+      "q_bh": 6.463055191485014e-39
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.28877741129362516,
+      "p": 7.581723706583943e-38,
+      "p_holm": 8.794799499637374e-36,
+      "q_bh": 1.4556909516641169e-37
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.10918371950530109,
+      "p": 3.1490137142144854e-07,
+      "p_holm": 1.5115265828229529e-05,
+      "q_bh": 3.9158719762252673e-07
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.23119216459691774,
+      "p": 4.375641628732647e-25,
+      "p_holm": 4.3318852124453205e-23,
+      "q_bh": 7.3954506401115155e-25
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": 0.03873248700925273,
+      "p": 0.05544490195893269,
+      "p_holm": 1.0,
+      "q_bh": 0.06306529132769595
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": 0.09193675968673014,
+      "p": 1.348970653908308e-05,
+      "p_holm": 0.0005935470877196555,
+      "q_bh": 1.6434160250659587e-05
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": 0.042922107408474575,
+      "p": 0.03659136775268026,
+      "p_holm": 1.0,
+      "q_bh": 0.042018795505470156
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.17429508078311096,
+      "p": 3.668904998337391e-17,
+      "p_holm": 3.0451911486200345e-15,
+      "q_bh": 5.573020250639074e-17
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.08298017146474997,
+      "p": 1.8727770861304556e-05,
+      "p_holm": 0.0007865663761747913,
+      "q_bh": 2.2586256315141173e-05
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.19351330662556898,
+      "p": 2.998951332500871e-25,
+      "p_holm": 2.998951332500871e-23,
+      "q_bh": 5.104598012767439e-25
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.2214057948001634,
+      "p": 4.590663701547535e-30,
+      "p_holm": 4.866103523640388e-28,
+      "q_bh": 8.161179913862285e-30
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.09763106050041269,
+      "p": 1.4561596727602255e-08,
+      "p_holm": 8.445726102009308e-07,
+      "q_bh": 1.909717603619968e-08
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": 0.03329738102366533,
+      "p": 0.06158251840462556,
+      "p_holm": 1.0,
+      "q_bh": 0.06971605857127422
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.14530172506469935,
+      "p": 5.67470070953286e-17,
+      "p_holm": 4.653254581816945e-15,
+      "q_bh": 8.565585976653373e-17
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.379892672286118,
+      "p": 3.1502764405638005e-77,
+      "p_holm": 6.332055645533239e-75,
+      "q_bh": 1.89016586433828e-76
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.33637063668208794,
+      "p": 5.479151837398839e-65,
+      "p_holm": 9.53372419707398e-63,
+      "q_bh": 1.962681255187644e-64
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.3964555996999387,
+      "p": 5.1022564884673845e-84,
+      "p_holm": 1.0663716060896833e-81,
+      "q_bh": 3.826692366350538e-83
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.35489847713354744,
+      "p": 8.801118997664532e-64,
+      "p_holm": 1.522593586595964e-61,
+      "q_bh": 3.1062772932933643e-63
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.3524388919647474,
+      "p": 3.3196476112799016e-71,
+      "p_holm": 6.307330461431813e-69,
+      "q_bh": 1.562187111190542e-70
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.34761275241797523,
+      "p": 4.4805094119861077e-51,
+      "p_holm": 6.6759590238593e-49,
+      "q_bh": 1.1688285422572454e-50
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.5089029317126059,
+      "p": 1.2413124441627448e-84,
+      "p_holm": 2.6191692571833916e-82,
+      "q_bh": 9.930499553301958e-84
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.350448309025863,
+      "p": 1.6678114778617106e-51,
+      "p_holm": 2.5017172167925658e-49,
+      "q_bh": 4.398623677877039e-51
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.037991690895554285,
+      "p": 0.07095116172544386,
+      "p_holm": 1.0,
+      "q_bh": 0.0799449709582466
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.20734031628225835,
+      "p": 6.530033549528061e-19,
+      "p_holm": 5.746429523584693e-17,
+      "q_bh": 1.0243189881612643e-18
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": -0.09256571761871793,
+      "p": 4.02032711992574e-06,
+      "p_holm": 0.00018493504751658404,
+      "q_bh": 4.94809491683168e-06
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.300623462627675,
+      "p": 8.661132751946508e-46,
+      "p_holm": 1.177914054264725e-43,
+      "q_bh": 1.9796874861592017e-45
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": 0.016684028542284297,
+      "p": 0.4128561634438839,
+      "p_holm": 1.0,
+      "q_bh": 0.4384313240112041
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.09655083176166832,
+      "p": 8.349890078486326e-07,
+      "p_holm": 3.924448336888573e-05,
+      "q_bh": 1.0329760921838754e-06
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.10076169790813734,
+      "p": 2.1487281933940263e-07,
+      "p_holm": 1.0958513786309534e-05,
+      "q_bh": 2.7141829811292966e-07
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.11049098502377283,
+      "p": 7.176209981808584e-09,
+      "p_holm": 4.233963889267065e-07,
+      "q_bh": 9.463134041945386e-09
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.1387752390737458,
+      "p": 2.1032700342105724e-13,
+      "p_holm": 1.514354424631612e-11,
+      "q_bh": 2.986892356275369e-13
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.092082638896343,
+      "p": 2.5695517232101686e-07,
+      "p_holm": 1.2635614667018017e-05,
+      "q_bh": 3.211939654012711e-07
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": -0.012001229976184741,
+      "p": 0.42919805279857004,
+      "p_holm": 1.0,
+      "q_bh": 0.45377767696765114
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.17905785183962306,
+      "p": 5.081133431335878e-22,
+      "p_holm": 4.674642756829007e-20,
+      "q_bh": 8.184375996782622e-22
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.33720628949646364,
+      "p": 9.441335633773998e-57,
+      "p_holm": 1.4822896945025176e-54,
+      "q_bh": 2.697524466792571e-56
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.3100245727953604,
+      "p": 1.855349113364316e-46,
+      "p_holm": 2.560381776442756e-44,
+      "q_bh": 4.3231435651207365e-46
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.3411695511942475,
+      "p": 8.069060503852922e-60,
+      "p_holm": 1.347533104143438e-57,
+      "q_bh": 2.616992595844191e-59
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3111101904434593,
+      "p": 2.2422851057381183e-47,
+      "p_holm": 3.161621999090747e-45,
+      "q_bh": 5.381484253771484e-47
+    },
+    {
+      "arch": "deit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.3236057920713552,
+      "p": 2.859423489405468e-58,
+      "p_holm": 4.603671817942804e-56,
+      "q_bh": 8.578270468216404e-58
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.5103172973025091,
+      "p": 1.088539728443049e-84,
+      "p_holm": 2.307704224299264e-82,
+      "q_bh": 9.008604649183854e-84
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.4077119176626222,
+      "p": 5.044614192638222e-66,
+      "p_holm": 8.928967120969653e-64,
+      "q_bh": 1.8854786891952265e-65
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.5313766087994438,
+      "p": 6.281597238329359e-99,
+      "p_holm": 1.419640975862435e-96,
+      "q_bh": 1.0050555581326973e-97
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.49433897476664745,
+      "p": 5.801167693223755e-84,
+      "p_holm": 1.206642880190541e-81,
+      "q_bh": 4.219031049617276e-83
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.2461823999619198,
+      "p": 5.829889829060662e-33,
+      "p_holm": 6.529476608547941e-31,
+      "q_bh": 1.0846306658717512e-32
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": 0.4141524002225014,
+      "p": 8.24169390243819e-70,
+      "p_holm": 1.516471678048627e-67,
+      "q_bh": 3.470186906289764e-69
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": 0.23095302631875328,
+      "p": 3.619570501515388e-26,
+      "p_holm": 3.6919619115456956e-24,
+      "q_bh": 6.2496181321129e-26
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": 0.3576784413272057,
+      "p": 1.243235814113205e-59,
+      "p_holm": 2.0513390932867882e-57,
+      "q_bh": 3.9260078340417e-59
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": 0.29636846315127835,
+      "p": 1.0513325724364844e-39,
+      "p_holm": 1.282625738372511e-37,
+      "q_bh": 2.1203345998719014e-39
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.30065691456317745,
+      "p": 4.3348442356772e-43,
+      "p_holm": 5.678645948737131e-41,
+      "q_bh": 9.457841968750254e-43
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.27470144610068115,
+      "p": 1.918049295977322e-37,
+      "p_holm": 2.2057566903739204e-35,
+      "q_bh": 3.6534272304329943e-37
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.21304442694720446,
+      "p": 8.574513615095105e-25,
+      "p_holm": 8.403023342793203e-23,
+      "q_bh": 1.4390792081278498e-24
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.23542290168051588,
+      "p": 2.3244294115132464e-30,
+      "p_holm": 2.4871394703191737e-28,
+      "q_bh": 4.163157154949098e-30
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": 0.2758833058106683,
+      "p": 7.316827287156291e-38,
+      "p_holm": 8.560687925972861e-36,
+      "q_bh": 1.4161601200947662e-37
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.1321405986829888,
+      "p": 3.4866168815343963e-13,
+      "p_holm": 2.4754979858894213e-11,
+      "q_bh": 4.922282656283854e-13
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.4719522764238805,
+      "p": 4.543818407054324e-88,
+      "p_holm": 9.860085943307882e-86,
+      "q_bh": 4.543818407054324e-87
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.3222296012004945,
+      "p": 4.5159407083342727e-48,
+      "p_holm": 6.5029546200013525e-46,
+      "q_bh": 1.1173461546394077e-47
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.41956196862938816,
+      "p": 9.00085604491049e-80,
+      "p_holm": 1.854176345251561e-77,
+      "q_bh": 6.172015573652908e-79
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.39124652820621564,
+      "p": 2.7876152523649757e-65,
+      "p_holm": 4.878326691638708e-63,
+      "q_bh": 1.0136782735872639e-64
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.3902063240775357,
+      "p": 1.833091622795064e-70,
+      "p_holm": 3.4095504183988194e-68,
+      "q_bh": 7.998945263105734e-70
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.588328018584158,
+      "p": 2.628676242708079e-109,
+      "p_holm": 6.098528883082743e-107,
+      "q_bh": 7.00980331388821e-108
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.5167791232469967,
+      "p": 2.5442573813423464e-94,
+      "p_holm": 5.648251386580009e-92,
+      "q_bh": 3.2137987974850693e-93
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.7116917626402187,
+      "p": 1.4274036993227801e-139,
+      "p_holm": 3.4257688783746724e-137,
+      "q_bh": 3.4257688783746724e-137
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.5295679925406869,
+      "p": 3.1892357686170776e-96,
+      "p_holm": 7.111995764016083e-94,
+      "q_bh": 4.252314358156104e-95
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.3529038461593768,
+      "p": 4.4829662552027356e-72,
+      "p_holm": 8.562465547437225e-70,
+      "q_bh": 2.151823802497313e-71
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": -0.03197419915066781,
+      "p": 0.043841100110353325,
+      "p_holm": 1.0,
+      "q_bh": 0.050104114411832365
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.21384571983041845,
+      "p": 9.57607790687515e-26,
+      "p_holm": 9.671838685943901e-24,
+      "q_bh": 1.6416133554643113e-25
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.04205998669976348,
+      "p": 0.007029919615569508,
+      "p_holm": 0.26072890382523695,
+      "q_bh": 0.008270493665375892
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.02527167343549862,
+      "p": 0.12389519909203893,
+      "p_holm": 1.0,
+      "q_bh": 0.1389478868321932
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": -0.1364471615932867,
+      "p": 5.027123455073868e-11,
+      "p_holm": 3.267630245798014e-09,
+      "q_bh": 6.855168347828002e-11
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.34491197170812454,
+      "p": 1.1769274878641469e-55,
+      "p_holm": 1.8360068810680691e-53,
+      "q_bh": 3.323089377498767e-55
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.29350920553873583,
+      "p": 1.7120111382691772e-40,
+      "p_holm": 2.1400139228364714e-38,
+      "q_bh": 3.5420920102120906e-40
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.2945352945760138,
+      "p": 4.910496971888635e-47,
+      "p_holm": 6.825590790925203e-45,
+      "q_bh": 1.1554110522090906e-46
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": 0.39108804754699583,
+      "p": 9.488480915389493e-71,
+      "p_holm": 1.7838344120932247e-68,
+      "q_bh": 4.2966706031952415e-70
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.12561379343381396,
+      "p": 2.007858139481145e-10,
+      "p_holm": 1.2247934650834984e-08,
+      "q_bh": 2.6771441859748595e-10
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.48068510486502497,
+      "p": 4.5286517024766945e-102,
+      "p_holm": 1.0325325881646863e-99,
+      "q_bh": 8.360587758418514e-101
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.32089280355894023,
+      "p": 6.791861994292669e-48,
+      "p_holm": 9.712362651838517e-46,
+      "q_bh": 1.663313141459429e-47
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.4253216995846593,
+      "p": 3.848398013734527e-89,
+      "p_holm": 8.427991650078614e-87,
+      "q_bh": 4.198252378619485e-88
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.5160227531069662,
+      "p": 2.921573106901436e-111,
+      "p_holm": 6.836481070149361e-109,
+      "q_bh": 1.0016822080804923e-109
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.2989854384078963,
+      "p": 2.0704249156344642e-47,
+      "p_holm": 2.940003380200939e-45,
+      "q_bh": 5.01921191668961e-47
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.33162221871746955,
+      "p": 9.223331077159835e-45,
+      "p_holm": 1.2359263643394179e-42,
+      "q_bh": 2.068784540671365e-44
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.3993153196078016,
+      "p": 4.6406152891746616e-61,
+      "p_holm": 7.796233685813432e-59,
+      "q_bh": 1.525681738906738e-60
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.3347021078368181,
+      "p": 1.0492458358407994e-45,
+      "p_holm": 1.4164818783850792e-43,
+      "q_bh": 2.375650949073508e-45
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.24344112548433722,
+      "p": 1.9603395291686828e-26,
+      "p_holm": 2.0191497150437432e-24,
+      "q_bh": 3.409286137684666e-26
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.3159746709130662,
+      "p": 1.9465504807305005e-43,
+      "p_holm": 2.5694466345642607e-41,
+      "q_bh": 4.2859827098653226e-43
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": 0.0645796452542671,
+      "p": 0.0009906214368239187,
+      "p_holm": 0.03962485747295675,
+      "q_bh": 0.001182831566356918
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": 0.02582978031743878,
+      "p": 0.21175752723033858,
+      "p_holm": 1.0,
+      "q_bh": 0.23206304354009707
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.05075380709935625,
+      "p": 0.006861286942769393,
+      "p_holm": 0.26072890382523695,
+      "q_bh": 0.008111866336279085
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.010785685690874082,
+      "p": 0.5562903466803026,
+      "p_holm": 1.0,
+      "q_bh": 0.5779639965509638
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.11409174849664913,
+      "p": 4.532398796080443e-08,
+      "p_holm": 2.4021713619226347e-06,
+      "q_bh": 5.786041016272906e-08
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.155148337005663,
+      "p": 1.409004681980994e-16,
+      "p_holm": 1.1412937924046052e-14,
+      "q_bh": 2.1135070229714912e-16
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.15297954691415,
+      "p": 9.639247044743676e-16,
+      "p_holm": 7.518612694900068e-14,
+      "q_bh": 1.4192756384898663e-15
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.06349072992621166,
+      "p": 0.001023514571803188,
+      "p_holm": 0.039917068300324335,
+      "q_bh": 0.0012160569169938867
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": 0.03217787081688178,
+      "p": 0.12459781134387722,
+      "p_holm": 1.0,
+      "q_bh": 0.13908592894200247
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.12521139287685965,
+      "p": 3.7119446954685276e-11,
+      "p_holm": 2.4498834990092284e-09,
+      "q_bh": 5.090667010928267e-11
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.43277006545759095,
+      "p": 2.8535905484635325e-96,
+      "p_holm": 6.392042828558312e-94,
+      "q_bh": 4.0285984213602814e-95
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.4061135683897457,
+      "p": 2.197846887652599e-78,
+      "p_holm": 4.461629181934776e-76,
+      "q_bh": 1.3881138237805889e-77
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.40030332593912316,
+      "p": 3.503128375854851e-77,
+      "p_holm": 7.006256751709703e-75,
+      "q_bh": 2.050611732207718e-76
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3988883244570047,
+      "p": 7.917099967098433e-78,
+      "p_holm": 1.5992541933538835e-75,
+      "q_bh": 4.87206151821442e-77
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.43212692394133184,
+      "p": 6.508474619048447e-94,
+      "p_holm": 1.4383728908097067e-91,
+      "q_bh": 7.810169542858136e-93
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.2954858507054967,
+      "p": 3.089143138291046e-39,
+      "p_holm": 3.7378631973321657e-37,
+      "q_bh": 6.178286276582092e-39
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.4618768517587577,
+      "p": 5.855429893652693e-79,
+      "p_holm": 1.200363128198802e-76,
+      "q_bh": 3.9036199291017948e-78
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.3041360177721496,
+      "p": 8.379646386945774e-40,
+      "p_holm": 1.0306965055943303e-37,
+      "q_bh": 1.7043348583618524e-39
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.19109655652480334,
+      "p": 4.8656382348485565e-18,
+      "p_holm": 4.135792499621273e-16,
+      "q_bh": 7.485597284382395e-18
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.2926144239222135,
+      "p": 1.058116910233651e-38,
+      "p_holm": 1.2591591231780447e-36,
+      "q_bh": 2.0815414627547233e-38
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": 0.149904897984595,
+      "p": 3.614685614608899e-13,
+      "p_holm": 2.5302799302262293e-11,
+      "q_bh": 5.073242967872139e-13
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.0449378007388946,
+      "p": 0.03199477477771862,
+      "p_holm": 1.0,
+      "q_bh": 0.03691704782044457
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.022801890312634798,
+      "p": 0.21064932313379914,
+      "p_holm": 1.0,
+      "q_bh": 0.23190751170693485
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.04504225452914305,
+      "p": 0.01392736045499871,
+      "p_holm": 0.48745761592495485,
+      "q_bh": 0.01622605101553248
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.1924299591158296,
+      "p": 1.541967141520127e-17,
+      "p_holm": 1.2952523988769067e-15,
+      "q_bh": 2.3571472227059267e-17
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.15038259550298694,
+      "p": 2.4870448771608188e-15,
+      "p_holm": 1.8901541066422224e-13,
+      "q_bh": 3.617519821324827e-15
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.20220989863155917,
+      "p": 2.12311173794229e-24,
+      "p_holm": 2.059418385804021e-22,
+      "q_bh": 3.53851956323715e-24
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.017675567280342402,
+      "p": 0.5127313361594404,
+      "p_holm": 1.0,
+      "q_bh": 0.5350240029489813
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": -0.01232769936628039,
+      "p": 0.45663011320513425,
+      "p_holm": 1.0,
+      "q_bh": 0.480663277058036
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.19003028813441877,
+      "p": 7.850950902872401e-23,
+      "p_holm": 7.379893848700057e-21,
+      "q_bh": 1.28178790250978e-22
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.39097006607412405,
+      "p": 1.6878161547498108e-75,
+      "p_holm": 3.3418759864046256e-73,
+      "q_bh": 9.420369235812898e-75
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.3351126360287083,
+      "p": 6.670551359537627e-52,
+      "p_holm": 1.0139238066497193e-49,
+      "q_bh": 1.798800366616888e-51
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.3925966602963752,
+      "p": 4.7006463217301945e-74,
+      "p_holm": 9.16626032737388e-72,
+      "q_bh": 2.4525111243809712e-73
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3931905633176905,
+      "p": 1.3866979276538038e-72,
+      "p_holm": 2.662460021095303e-70,
+      "q_bh": 6.791989849732917e-72
+    },
+    {
+      "arch": "vit_b16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.42425664588394246,
+      "p": 7.971454338128681e-87,
+      "p_holm": 1.7138626826976664e-84,
+      "q_bh": 7.358265542888013e-86
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.39662126764868877,
+      "p": 6.827305647816845e-58,
+      "p_holm": 1.0855415980028783e-55,
+      "q_bh": 1.9982357993610275e-57
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.3823451373027613,
+      "p": 1.4599133931540536e-59,
+      "p_holm": 2.394257964772648e-57,
+      "q_bh": 4.5503794072334134e-59
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.588312476366427,
+      "p": 3.199337572325816e-113,
+      "p_holm": 7.550436670688926e-111,
+      "q_bh": 1.5356820347163919e-111
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.37379328788722177,
+      "p": 8.663898958706402e-58,
+      "p_holm": 1.3688960354756117e-55,
+      "q_bh": 2.505223795288598e-57
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.1903421826889186,
+      "p": 4.1131258210829186e-24,
+      "p_holm": 3.948600788239602e-22,
+      "q_bh": 6.807932393516554e-24
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": -0.11994104833902704,
+      "p": 7.20427812160844e-11,
+      "p_holm": 4.538695216613318e-09,
+      "q_bh": 9.713633422393403e-11
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.3460567469791302,
+      "p": 1.1058006664125282e-51,
+      "p_holm": 1.6697590062829175e-49,
+      "q_bh": 2.948801777100075e-51
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.12181403970961932,
+      "p": 1.2153935172522715e-12,
+      "p_holm": 8.386215269040673e-11,
+      "q_bh": 1.6958979310496812e-12
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.1065689477985991,
+      "p": 2.680174697997927e-08,
+      "p_holm": 1.5276995778588184e-06,
+      "q_bh": 3.495880040866861e-08
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": -0.0803003084320327,
+      "p": 9.13219944675324e-05,
+      "p_holm": 0.0037442017731688284,
+      "q_bh": 0.00010958639336103888
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.09322256733121358,
+      "p": 4.898215052337829e-06,
+      "p_holm": 0.0002204196773552023,
+      "q_bh": 5.9978143498014235e-06
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.17943122567289854,
+      "p": 3.0650830743627434e-18,
+      "p_holm": 2.6359714439519593e-16,
+      "q_bh": 4.745935082884248e-18
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.02176585958105139,
+      "p": 0.6055634534023033,
+      "p_holm": 1.0,
+      "q_bh": 0.6237563468521579
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": 0.054534836800252624,
+      "p": 0.010482802521078824,
+      "p_holm": 0.37738089075883763,
+      "q_bh": 0.01227254929297033
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.22151485574384275,
+      "p": 6.062592508399016e-32,
+      "p_holm": 6.608225834154927e-30,
+      "q_bh": 1.1022895469816393e-31
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.38537787688300235,
+      "p": 6.189619163509604e-73,
+      "p_holm": 1.1945964985573535e-70,
+      "q_bh": 3.094809581754802e-72
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.11624237965230241,
+      "p": 6.825452816352747e-08,
+      "p_holm": 3.5492354645034287e-06,
+      "q_bh": 8.667241671559045e-08
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.37180317625715564,
+      "p": 3.794890803472775e-81,
+      "p_holm": 7.855423963188644e-79,
+      "q_bh": 2.6787464495101942e-80
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3835193082956224,
+      "p": 4.391525799900404e-75,
+      "p_holm": 8.651305825803796e-73,
+      "q_bh": 2.395377709036584e-74
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar100",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.19300609377168246,
+      "p": 1.3666887154335862e-19,
+      "p_holm": 1.2300198438902276e-17,
+      "q_bh": 2.1722204748613295e-19
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.5481025486753761,
+      "p": 2.7279194585573794e-97,
+      "p_holm": 6.137818781754104e-95,
+      "q_bh": 4.0918791878360694e-96
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.5798816116036548,
+      "p": 3.668049463505088e-106,
+      "p_holm": 8.436513766061702e-104,
+      "q_bh": 8.003017011283828e-105
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.6593003027806484,
+      "p": 1.7917347773149137e-129,
+      "p_holm": 4.282246117782644e-127,
+      "q_bh": 2.1500817327778963e-127
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.4720267743887309,
+      "p": 4.662873509995327e-85,
+      "p_holm": 9.97854931139e-83,
+      "q_bh": 4.14477645332918e-84
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.3169963708674667,
+      "p": 1.538889638401159e-63,
+      "p_holm": 2.631501281665982e-61,
+      "q_bh": 5.276193045946831e-63
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": -0.18468204304768585,
+      "p": 2.5462967942570675e-23,
+      "p_holm": 2.418981954544214e-21,
+      "q_bh": 4.185693360422577e-23
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.4695548104209283,
+      "p": 2.6159319740685668e-89,
+      "p_holm": 5.755050342950847e-87,
+      "q_bh": 2.989636541792648e-88
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.22813338251943338,
+      "p": 3.614408122260539e-38,
+      "p_holm": 4.265001584267436e-36,
+      "q_bh": 7.052503653191295e-38
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": -0.20682438626163008,
+      "p": 6.097578131617311e-29,
+      "p_holm": 6.4024570381981764e-27,
+      "q_bh": 1.0760431996971726e-28
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": -0.2544120104316422,
+      "p": 4.515356311001537e-36,
+      "p_holm": 5.147506194541752e-34,
+      "q_bh": 8.53295680819188e-36
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.3737629294133072,
+      "p": 1.6166791393888293e-66,
+      "p_holm": 2.8938556595060046e-64,
+      "q_bh": 6.258112797634178e-66
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.3883707019445959,
+      "p": 1.9001951083629537e-69,
+      "p_holm": 3.477357048304205e-67,
+      "q_bh": 7.862876310467395e-69
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.29615953118793437,
+      "p": 7.683242515751189e-49,
+      "p_holm": 1.1217534072996735e-46,
+      "q_bh": 1.941029688189774e-48
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": 0.3063247110387994,
+      "p": 2.998717594400394e-47,
+      "p_holm": 4.1982046321605513e-45,
+      "q_bh": 7.125665570852422e-47
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.3474663674269162,
+      "p": 7.584845669997831e-75,
+      "p_holm": 1.4866297513195749e-72,
+      "q_bh": 4.045251023998843e-74
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.5022360644118545,
+      "p": 9.645226864362542e-108,
+      "p_holm": 2.228047405667747e-105,
+      "q_bh": 2.31485444744701e-106
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.31092854081284077,
+      "p": 4.22972480668949e-44,
+      "p_holm": 5.625533992897022e-42,
+      "q_bh": 9.399388459309978e-44
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.4482693475596834,
+      "p": 1.3371076619398894e-99,
+      "p_holm": 3.0352343926035487e-97,
+      "q_bh": 2.2921845633255245e-98
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.4792536010165246,
+      "p": 1.315066688449624e-102,
+      "p_holm": 3.011502716549639e-100,
+      "q_bh": 2.6301333768992482e-101
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "cifar10",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.2368450373208943,
+      "p": 5.136816911902684e-31,
+      "p_holm": 5.547762264854898e-29,
+      "q_bh": 9.269444051553715e-31
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.3081709485889036,
+      "p": 1.7172100629924418e-42,
+      "p_holm": 2.1980288806303255e-40,
+      "q_bh": 3.647171815205186e-42
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.3046384637240102,
+      "p": 1.8855234462701877e-41,
+      "p_holm": 2.3946147767631384e-39,
+      "q_bh": 3.969523044779343e-41
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.3143524068353382,
+      "p": 9.054597842222503e-43,
+      "p_holm": 1.1770977194889254e-40,
+      "q_bh": 1.9577508848048657e-42
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.17486688101812028,
+      "p": 8.266248611198968e-16,
+      "p_holm": 6.612998888959175e-14,
+      "q_bh": 1.2322358178184798e-15
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.2722200872579884,
+      "p": 1.5565590084809582e-32,
+      "p_holm": 1.7277804994138637e-30,
+      "q_bh": 2.873647400272538e-32
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": -0.001348189957764379,
+      "p": 0.8642392581044087,
+      "p_holm": 1.0,
+      "q_bh": 0.8678553219458498
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": -0.014875217989782306,
+      "p": 0.14903917822250554,
+      "p_holm": 1.0,
+      "q_bh": 0.16559908691389505
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.002678867646481507,
+      "p": 0.8395215798245903,
+      "p_holm": 1.0,
+      "q_bh": 0.8465763830163936
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": 0.0009472789170344889,
+      "p": 0.8336221084038475,
+      "p_holm": 1.0,
+      "q_bh": 0.844174286991238
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": -0.004286159591638925,
+      "p": 0.46378293007519944,
+      "p_holm": 1.0,
+      "q_bh": 0.4860607127425671
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.09569208984742386,
+      "p": 3.484737428360568e-08,
+      "p_holm": 1.951452959881918e-06,
+      "q_bh": 4.520740447602899e-08
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.07448701899368794,
+      "p": 1.8040123599869834e-05,
+      "p_holm": 0.0007757253147944029,
+      "q_bh": 2.1866816484690707e-05
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.08985377031761539,
+      "p": 2.5271229334036033e-07,
+      "p_holm": 1.2635614667018017e-05,
+      "q_bh": 3.175442429407669e-07
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": -0.016324318042973646,
+      "p": 0.3538503817199665,
+      "p_holm": 1.0,
+      "q_bh": 0.3791254089856784
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.114466008203738,
+      "p": 2.081975025738814e-10,
+      "p_holm": 1.2491850154432884e-08,
+      "q_bh": 2.760629868382958e-10
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.3569941542497315,
+      "p": 4.369024831036423e-69,
+      "p_holm": 7.95162519248629e-67,
+      "q_bh": 1.7772304397436299e-68
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.31703593921860945,
+      "p": 5.791166200216596e-55,
+      "p_holm": 8.918395948333557e-53,
+      "q_bh": 1.5975630897149228e-54
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.3453682111770296,
+      "p": 1.382416005462555e-63,
+      "p_holm": 2.3777555293955948e-61,
+      "q_bh": 4.808403497261061e-63
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3883332592742852,
+      "p": 1.6374417783937887e-78,
+      "p_holm": 3.340381227923329e-76,
+      "q_bh": 1.0621243967959712e-77
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenet",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.34019914989704525,
+      "p": 1.8791832171961043e-68,
+      "p_holm": 3.401321623124949e-66,
+      "q_bh": 7.516732868784417e-68
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "mean",
+      "margin": 0.3507054713006074,
+      "p": 1.9808469010879046e-55,
+      "p_holm": 3.070312696686252e-53,
+      "q_bh": 5.527944840245316e-55
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "blur",
+      "margin": 0.4014895415160648,
+      "p": 4.975054225415499e-63,
+      "p_holm": 8.457592183206349e-61,
+      "q_bh": 1.6817084705629857e-62
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "noise",
+      "margin": 0.35107772798572745,
+      "p": 6.167969542709032e-53,
+      "p_holm": 9.436993400344819e-51,
+      "q_bh": 1.682173511647918e-52
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "shuffle",
+      "margin": 0.1599276512252029,
+      "p": 1.875145281592755e-13,
+      "p_holm": 1.3688560555627112e-11,
+      "q_bh": 2.678778973703936e-13
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "IG",
+      "strategy": "inpaint",
+      "margin": 0.22743459899156424,
+      "p": 2.483557533905075e-22,
+      "p_holm": 2.3097085065317198e-20,
+      "q_bh": 4.027390595521744e-22
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "mean",
+      "margin": -0.0025759213020344245,
+      "p": 0.7386587164863725,
+      "p_holm": 1.0,
+      "q_bh": 0.7543748593903378
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "blur",
+      "margin": 0.01556749600123509,
+      "p": 0.1753664898946352,
+      "p_holm": 1.0,
+      "q_bh": 0.1939537215424537
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "noise",
+      "margin": -0.001977993434162266,
+      "p": 0.9323570464850309,
+      "p_holm": 1.0,
+      "q_bh": 0.9323570464850309
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "shuffle",
+      "margin": 0.006330640769887143,
+      "p": 0.5863082915534348,
+      "p_holm": 1.0,
+      "q_bh": 0.6065258188483809
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "RawAtt",
+      "strategy": "inpaint",
+      "margin": 0.013482243945802799,
+      "p": 0.36420282264538695,
+      "p_holm": 1.0,
+      "q_bh": 0.3884830108217461
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "mean",
+      "margin": 0.13823690115439252,
+      "p": 1.5883795158493089e-12,
+      "p_holm": 1.0800980707775301e-10,
+      "q_bh": 2.2035322763227407e-12
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "blur",
+      "margin": 0.19050492950812947,
+      "p": 5.478782329497695e-22,
+      "p_holm": 4.985691919842902e-20,
+      "q_bh": 8.76605172719631e-22
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "noise",
+      "margin": 0.12379882625617494,
+      "p": 5.497771935534421e-11,
+      "p_holm": 3.5185740387420295e-09,
+      "q_bh": 7.454606014283961e-11
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "shuffle",
+      "margin": -0.016549512717417808,
+      "p": 0.2793482149194395,
+      "p_holm": 1.0,
+      "q_bh": 0.30336457728807914
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "Rollout",
+      "strategy": "inpaint",
+      "margin": 0.17919434837634252,
+      "p": 1.8722724319928612e-19,
+      "p_holm": 1.6663224644736465e-17,
+      "q_bh": 2.956219629462412e-19
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "mean",
+      "margin": 0.2943137325334332,
+      "p": 4.0814925807344848e-50,
+      "p_holm": 6.040609019487037e-48,
+      "q_bh": 1.05328840793148e-49
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "blur",
+      "margin": 0.3319191699850717,
+      "p": 8.190653207130385e-59,
+      "p_holm": 1.3350764727622527e-56,
+      "q_bh": 2.5202009868093495e-58
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "noise",
+      "margin": 0.27642710686410354,
+      "p": 7.573515221278272e-46,
+      "p_holm": 1.0375715853151233e-43,
+      "q_bh": 1.7477342818334475e-45
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "shuffle",
+      "margin": 0.3724976275976137,
+      "p": 5.311698356960941e-70,
+      "p_holm": 9.82664196037774e-68,
+      "q_bh": 2.2764421529832603e-69
+    },
+    {
+      "arch": "vit_l16",
+      "dataset": "imagenette",
+      "method": "TransMM",
+      "strategy": "inpaint",
+      "margin": 0.3554997124209221,
+      "p": 2.8471787504298345e-66,
+      "p_holm": 5.067978175765106e-64,
+      "q_bh": 1.0846395239732704e-65
+    }
+  ]
+}

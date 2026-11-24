@@ -1,0 +1,43 @@
+name: saco
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+# pytorch>=2.6 is required: transformers refuses to torch.load non-safetensors HF
+# checkpoints below that version (CVE-2025-32434) -- and the CIFAR community
+# checkpoints in src/configs/cifar_checkpoints.py are exactly that case.
+#
+# KNOWN ISSUE (found 2026-08-14): the conda `pytorch-cuda=12.1` install below can
+# silently resolve to a CPU-only build depending on the solver/node (install_env.job
+# runs on the GPU-less `staging` partition) -- torch.cuda.is_available() then just
+# returns False with no error, no crash, so every "GPU" job silently ran on CPU.
+# Fix used in production: `pip install --force-reinstall "torch>=2.6" torchvision`
+# (plain PyPI index, not a version-pinned download.pytorch.org/whl/cuXXX index --
+# those can cap you below 2.6) gets a real CUDA build, but then importing
+# torchvision.ops (-> torch._dynamo -> optree) crashes with
+# `ImportError: .../libstdc++.so.6: version 'GLIBCXX_3.4.31' not found` because
+# this cluster's system libstdc++ is older than what the wheel expects.
+# `conda install -c conda-forge "libstdcxx-ng>=13"` provides a new-enough one
+# INSIDE the env, but conda doesn't add its own lib/ to LD_LIBRARY_PATH by default
+# -- every job script must `export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:$LD_LIBRARY_PATH"`
+# after `source activate saco` (see jobs/run_experiment.job). All of `run_experiment.job`
+# now also asserts torch.cuda.is_available() before running, to fail loud instead of
+# silently falling back to CPU again if this ever regresses.
+dependencies:
+  - python=3.11
+  - pytorch>=2.6
+  - torchvision
+  - pytorch-cuda=12.1
+  - libstdcxx-ng>=13
+  - numpy
+  - scipy
+  - matplotlib
+  - tqdm
+  - pip
+  - pip:
+      - timm
+      - captum
+      - transformers
+      - huggingface_hub
+      - opencv-python-headless
+      - accelerate

@@ -1,0 +1,75 @@
+#!/bin/bash
+#SBATCH --job-name=saco_run
+#SBATCH --partition=gpu_a100
+#SBATCH --gpus=1
+#SBATCH --cpus-per-task=18
+#SBATCH --time=03:00:00
+#SBATCH --account=YOUR_SLURM_ACCOUNT
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
+
+# Runs one (arch, dataset) combination. Submit via submit_matrix.sh, which sets
+# ARCH/DATASET per job with `sbatch --export=ARCH=...,DATASET=...`; or submit this
+# directly with the same --export flag for a one-off run.
+#
+# IMPORTANT: always submit from the repository root (e.g.
+# `sbatch jobs/run_experiment.job`, or via submit_matrix.sh which cd's there for
+# you) -- paths below are resolved relative to $SLURM_SUBMIT_DIR, which SLURM sets
+# to wherever `sbatch` was invoked from, not to this script's own location.
+#
+# Data and model weights must already be cached -- run prepare_data.job first
+# (imagenette/cifar10/cifar100), or stage ImageNet yourself and pass DATA_ROOT.
+#
+# --time=03:00:00 (bumped from 02:00:00): headroom for TransMM (added alongside
+# Random/IG/RawAtt/Rollout) and the NUM_IMAGES default bump 200->1000. No local
+# timing data yet -- tighten after the first real run.
+set -euo pipefail
+
+: "${ARCH:?set via sbatch --export=ARCH=vit_b16|vit_l16|deit_b16}"
+: "${DATASET:?set via sbatch --export=DATASET=imagenette|imagenet|cifar10|cifar100}"
+: "${NUM_IMAGES:=1000}"
+: "${DATA_ROOT:=$SLURM_SUBMIT_DIR/data}"
+: "${OUTPUT_DIR:=$SLURM_SUBMIT_DIR/results}"
+: "${CHECKPOINT:=}"
+: "${IG_STEPS:=20}"
+: "${IG_INTERNAL_BATCH:=}"   # e.g. 25: IG steps in chunks, same result, less GPU memory
+: "${METHODS:=}"   # e.g. METHODS=IG to re-run one method only (space-separated for several)
+
+module purge
+module load 2024
+module load Anaconda3/2024.06-1   # <-- verify with `module avail Anaconda3`
+source activate saco
+
+# Required or torch silently falls back to CPU / crashes on import: pip-installed
+# torch/torchvision wheels need a libstdc++ newer than this cluster's system one
+# (GLIBCXX_3.4.31, via torch._dynamo -> optree). conda-forge's libstdcxx-ng provides
+# it inside the env, but conda does NOT put its own lib/ on LD_LIBRARY_PATH by
+# default -- do it explicitly. Verified 2026-08-14: without this, `torch.cuda.
+# is_available()` silently returns False even inside a --gpus=1 allocation (no
+# error, no crash -- it just runs on CPU) since the CPU-only wheel that got
+# resolved originally (during install_env.job on the GPU-less staging partition)
+# doesn't hit the GLIBCXX check at all, masking the problem until you explicitly
+# check torch.version.cuda.
+export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:${LD_LIBRARY_PATH:-}"
+
+# Fail loud, not silent: this job requested --gpus=1, so torch.cuda.is_available()
+# must be True. Without this check a broken torch install just runs on CPU for the
+# full walltime with no error -- exactly what happened before the LD_LIBRARY_PATH
+# fix above was found.
+python -c "import torch, sys; sys.exit(0 if torch.cuda.is_available() else 1)" \
+  || { echo "FATAL: torch.cuda.is_available() is False in a --gpus=1 job -- refusing to silently run on CPU." >&2; exit 1; }
+
+cd "$SLURM_SUBMIT_DIR/src"
+
+export HF_HOME="$SLURM_SUBMIT_DIR/.hf_cache"
+
+srun python run_experiment.py \
+  --arch "$ARCH" \
+  --dataset "$DATASET" \
+  --data-root "$DATA_ROOT" \
+  --output-dir "$OUTPUT_DIR" \
+  --num-images "$NUM_IMAGES" \
+  --ig-steps "$IG_STEPS" \
+  ${IG_INTERNAL_BATCH:+--ig-internal-batch-size "$IG_INTERNAL_BATCH"} \
+  ${METHODS:+--methods $METHODS} \
+  ${CHECKPOINT:+--checkpoint "$CHECKPOINT"}

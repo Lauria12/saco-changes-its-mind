@@ -1,0 +1,86 @@
+{
+  "vit_b16_imagenet": {
+    "steps_100": {
+      "median_rel_error": 0.015033980532211524,
+      "mean_rel_error": 0.036830604782101185,
+      "p90_rel_error": 0.07451636425886993,
+      "frac_below_5pct": 0.84
+    },
+    "steps_200": {
+      "median_rel_error": 0.004706784068199568,
+      "mean_rel_error": 0.010098691794482955,
+      "p90_rel_error": 0.023476414939593897,
+      "frac_below_5pct": 0.98
+    }
+  },
+  "vit_l16_imagenette": {
+    "steps_100": {
+      "median_rel_error": 0.062289534634846336,
+      "mean_rel_error": 0.12405802032461137,
+      "p90_rel_error": 0.3684789160233593,
+      "frac_below_5pct": 0.42
+    },
+    "steps_200": {
+      "median_rel_error": 0.018596745950470533,
+      "mean_rel_error": 0.03258812918016632,
+      "p90_rel_error": 0.07488676676797963,
+      "frac_below_5pct": 0.74
+    }
+  },
+  "vit_l16_imagenet": {
+    "steps_100": {
+      "median_rel_error": 0.0801934167996068,
+      "mean_rel_error": 0.1292419066101067,
+      "p90_rel_error": 0.3411571461483949,
+      "frac_below_5pct": 0.34
+    },
+    "steps_200": {
+      "median_rel_error": 0.013135834065638136,
+      "mean_rel_error": 0.025352388795893806,
+      "p90_rel_error": 0.062290059275006415,
+      "frac_below_5pct": 0.88
+    }
+  },
+  "vit_l16_cifar10": {
+    "steps_100": {
+      "median_rel_error": 0.023730588131713807,
+      "mean_rel_error": 0.047491144316177236,
+      "p90_rel_error": 0.10520492916771047,
+      "frac_below_5pct": 0.74
+    },
+    "steps_200": {
+      "median_rel_error": 0.009784735133695046,
+      "mean_rel_error": 0.01579923707616338,
+      "p90_rel_error": 0.039410593378244006,
+      "frac_below_5pct": 0.96
+    }
+  },
+  "deit_b16_imagenette": {
+    "steps_100": {
+      "median_rel_error": 0.029634091693528333,
+      "mean_rel_error": 0.056411524128197055,
+      "p90_rel_error": 0.12432992819443546,
+      "frac_below_5pct": 0.66
+    },
+    "steps_200": {
+      "median_rel_error": 0.015881282152789306,
+      "mean_rel_error": 0.019902245881796964,
+      "p90_rel_error": 0.041902894669538324,
+      "frac_below_5pct": 0.94
+    }
+  },
+  "deit_b16_cifar10": {
+    "steps_100": {
+      "median_rel_error": 0.006248807405708819,
+      "mean_rel_error": 0.013883438735815127,
+      "p90_rel_error": 0.030705761805236643,
+      "frac_below_5pct": 0.96
+    },
+    "steps_200": {
+      "median_rel_error": 0.001318273016971018,
+      "mean_rel_error": 0.0022126676146003413,
+      "p90_rel_error": 0.004428493817265963,
+      "frac_below_5pct": 1.0
+    }
+  }
+}
